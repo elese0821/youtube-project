@@ -1,0 +1,19 @@
+#today {
+
+    .today__inner {
+        display: flex;
+        background-color: var(--mainColor);
+
+        .today__thumb {
+            width: 30%;
+            background-image: url("https://img.youtube.com/vi/qslT-yj9Oy8/default.jpg");
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .today__text {
+            width: 70%;
+            height: 310px;
+        }
+    }
+}

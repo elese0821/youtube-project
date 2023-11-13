@@ -10,8 +10,7 @@
 npx creact-react-app .
 
 -모드설치
-npm install react-router-dom axios react-icon react-player sas
-s react-helmet-async swiper
+npm install react-router-dom axios react-icon react-player sass react-helmet-async swiper
 
 1. react-router-dom: React 애플리케이션에서 라우팅을 구현하기 위한 패키지입니다. URL 경로에 따라 다른 컴포넌트를 렌더링하거나 페이지 간의 전환을 관리할 수 있습니다.
 2. axios: HTTP 요청을 보내고 응답을 받기 위한 패키지입니다. 서버와의 API 통신이나 데이터 요청에 사용될 수 있습니다.
