@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=250&section=header&text=youtube-project&fontSize=90&animation=fadeIn"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=250&section=header&text=유튜브사이트&fontSize=90&animation=fadeIn"/>
 
 # 나만의 음악 유튜브 사이트 만들기
 유튜브 API를 이용해서 음악 사이트를 만들겠습니다.
