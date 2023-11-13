@@ -12,6 +12,7 @@
 npx creact-react-app .
 
 -모드설치
+
 npm install react-router-dom axios react-icon react-player sas
 s react-helmet-async swiper
 
