@@ -3,27 +3,22 @@ import { AiOutlineCodepen } from "react-icons/ai";
 import { AiFillYoutube } from "react-icons/ai";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { SiFranprix } from "react-icons/si"
-import { SiGhostery } from "react-icons/si"
 import { SiGooglehome } from "react-icons/si"
 import { SiHotjar } from "react-icons/si"
 
 export const menuText = [
     {
         title: "Home",
-        icon: <SiFranprix />,
+        icon: <SiGooglehome />,
         src: "/"
     }, {
-        title: "인기 음악",
-        icon: <SiGhostery />,
+        title: "추천 음악",
+        icon: <SiHotjar />,
         src: "/today"
     }, {
-        title: "추천 음악",
-        icon: <SiGooglehome />,
-        src: "/youtuber"
-    }, {
-        title: "PLAY LIST",
-        icon: <SiHotjar />,
-        src: "/youtuber"
+        title: "인기 음악",
+        icon: <SiFranprix />,
+        src: "/Musician"
     }
 ]
 
