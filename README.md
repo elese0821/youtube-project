@@ -25,4 +25,4 @@ s react-helmet-async swiper
 
 
 ## swiper
-Navigation, Autoplay
+Navigation, Autoplay good
