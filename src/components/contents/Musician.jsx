@@ -28,9 +28,10 @@ const Musician = () => {
                         spaceBetween: 20,
                     },
                     960: {
-                        slidesPerView: 5,
+                        slidesPerView: 4,
                         spaceBetween: 20,
                     },
+
                     1200: {
                         slidesPerView: 6,
                         spaceBetween: 20,

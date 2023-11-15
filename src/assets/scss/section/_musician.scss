@@ -1,7 +1,7 @@
 .Musician__inner {
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: space-evenly
 }
 
 .Musician {
@@ -20,6 +20,9 @@
 
 #musicianPage {
 
+    Musician__inner {
+        margin: 0 auto;
+    }
 
     .Musician {
 
@@ -37,32 +40,36 @@
 }
 
 @media(max-width: 800px) {
-    .Musician__inner {}
 
-    .Musician {
-        width: 23%;
-        margin-right: 0;
-        justify-content: space-between;
+    #Musician {
+        .Musician {
+            width: 23%;
+            margin-right: 0;
+            justify-content: space-between;
 
 
-        .Musician__img {
-            width: auto;
-            width: 100%;
+            .Musician__img {
+                width: auto;
+                width: 100%;
+            }
+
+            .Musician__info {}
         }
-
-        .Musician__info {}
     }
 }
 
 @media(max-width: 600px) {
-
-    .Musician {
-        width: 31%;
+    #Musician {
+        .Musician {
+            width: 31%;
+        }
     }
 }
 
 @media(max-width: 400px) {
-    .Musician {
-        width: 48%;
+    #Musician {
+        .Musician {
+            width: 48%;
+        }
     }
 }

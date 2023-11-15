@@ -99,21 +99,28 @@
         li {
             margin-bottom: 5px;
 
+            &.active {
+                a {
+                    background-color: var(--white);
+                    color: var(--mainColor);
+                }
+            }
+
             a {
                 font-size: 0.8rem;
                 display: block;
                 line-height: 1;
-                color: var(--black300);
+                color: var(--white);
                 padding: 0.5rem 0.9rem 0.5rem 0.9rem;
                 position: relative;
                 transition: background-color 0.2s;
-                border: 1px solid var(--black400);
+                border: 1px solid var(--white);
                 font-weight: 700;
 
                 &:hover {
-                    background-color: var(--black);
-                    color: var(--white);
-                    border-color: var(--black);
+                    background-color: var(--white);
+                    color: var(--mainColor);
+                    border-color: var(--mainColor);
                 }
             }
         }
@@ -128,10 +135,11 @@
     right: 0;
     text-align: center;
     padding: 18px 0 12px;
-    background-color: var(--white);
 
     li {
         display: inline-block;
+
+
 
         a {
             display: inline-block;
