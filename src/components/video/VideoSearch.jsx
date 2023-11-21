@@ -10,42 +10,50 @@ const formatDate = (dateString) => {
     return `${year}-${month}-${day}`;
 };
 
-const VideoSearch = ({ videos }) => {
+
+const VideoSearch = ({ videos, layout = '' }) => {
+    const notdate = layout === "channel";
+
     return (
         <>
-            {
-                videos.map((video) => (
-                    <div className="video" key={video.id.videoId}>
-                        <div className="video__thumb">
-                            <Link
-                                to={`/video/${video.id.videoId}`}
-                                style={{
-                                    backgroundImage: `url(${video.snippet.thumbnails.high.url})`,
-                                }}
-                            ></Link>
-                        </div>
-                        <div className="video__info">
-                            <h3 className="title">
-                                <Link to={`/video/${video.id.videoId}`}>
-                                    {video.snippet.title}
-                                </Link>
-                            </h3>
-                            <p className="desc">{video.snippet.description}</p>
-                            <div className="info">
+            <div className="video__inner">
+                {
+                    videos.map((video) => (
+                        <div className={`video ${layout}`} key={video.id.videoId}>
+                            <div className="video__thumb">
                                 <Link
-                                    to={`/channel/${video.snippet.channelId}`}
-                                    className="author"
-                                >
-                                    {video.snippet.channelTitle}
-                                </Link>
-                                <span className="date">
-                                    {formatDate(video.snippet.publishedAt)}
-                                </span>
+                                    to={`/video/${video.id.videoId}`}
+                                    style={{
+                                        backgroundImage: `url(${video.snippet.thumbnails.high.url})`,
+                                    }}
+                                ></Link>
+                            </div>
+                            <div className="video__info">
+                                <h3 className="title">
+                                    <Link to={`/video/${video.id.videoId}`}>
+                                        {video.snippet.title}
+                                    </Link>
+                                </h3>
+                                <p className="desc">{video.snippet.description}</p>
+                                {!notdate && (
+                                    <div className="info">
+
+                                        <Link
+                                            to={`/channel/${video.snippet.channelId}`}
+                                            className="author"
+                                        >
+                                            {video.snippet.channelTitle}
+                                        </Link>
+                                        <span className="date">
+                                            {formatDate(video.snippet.publishedAt)}
+                                        </span>
+                                    </div>
+                                )}
                             </div>
                         </div>
-                    </div>
-                ))
-            }
+                    ))
+                }
+            </div>
         </>
 
     )

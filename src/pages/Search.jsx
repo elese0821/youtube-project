@@ -35,9 +35,7 @@ const Search = () => {
     return (
         <section id="searchPage">
             <h2>🍳<em>{searchId}</em> 검색 결과입니다.</h2>
-            <div className="video__inner">
-                <VideoSearch videos={videos} />
-            </div>
+            <VideoSearch videos={videos} />
 
             <div className="video__more">
                 <button onClick={handleLoadMore}>MORE</button>

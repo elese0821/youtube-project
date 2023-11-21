@@ -56,3 +56,7 @@ REST Pull API는 다양한 웹 서비스와 통합하고 데이터를 가져오�
 link to
 params
 useEffect
+
+
+## 에러
+git config --global core.autocrlf false
