@@ -106,3 +106,13 @@
         }
     }
 }
+
+@media (max-width:800px) {
+    .search__inner {
+        padding: 17px 20px 18px 91px;
+    }
+
+    .header__logo a span {
+        display: none;
+    }
+}

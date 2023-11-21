@@ -6,8 +6,7 @@
     height: 100%;
     z-index: 1000;
     background-color: var(--mainColor);
-
-
+    box-sizing: border-box;
 }
 
 
@@ -37,8 +36,15 @@
 
 
 @media(max-width:800px) {
+
+
     #header {
-        left: -250px;
+        left: -260px;
+        transition: all 0.3s ease-in;
+
+        &.show {
+            left: 0;
+        }
     }
 
     #main {
