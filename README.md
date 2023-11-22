@@ -54,10 +54,10 @@ params
 useEffect
 
 
-## 에러
+## 트러블슈팅
 git config --global core.autocrlf false
 
-# react 서스펜스
+## react 서스펜스
 https://www.daleseo.com/react-suspense/
 React의 Suspense는 컴포넌트가 준비될 때까지 로딩 상태를 표시하는 방법을 제어하는 기능입니다.
 
