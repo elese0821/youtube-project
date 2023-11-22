@@ -2,10 +2,10 @@ import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { menuText, keywordText } from '../../data/header'
 
-const Menu = (props) => {
+const Menu = () => {
     const location = useLocation();
     return (
-        <nav className={`header__menu ${props.show ? 'show' : ''}`}>
+        <nav className='header__menu'>
             <ul className='menu'>
                 {menuText.map((menu, key) => (
                     <li key={key} className={location.pathname === menu.src ? 'active' : ''}>

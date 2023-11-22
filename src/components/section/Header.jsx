@@ -13,9 +13,9 @@ const Header = () => {
     }
 
     return (
-        <header id='header' role='banner'>
+        <header id='header' className={showMenu ? 'show' : ''} role='banner'>
             <Logo onClick={toggleShowMenu} />
-            <Menu show={showMenu} />
+            <Menu />
             <Sns />
         </header>
     )

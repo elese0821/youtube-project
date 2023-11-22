@@ -44,7 +44,6 @@ const Channel = () => {
             title="음악 유튜버 채널"
             description="음악 채널 페이지 입니다."
         >
-
             <section id='channelPage' className={channelPageClass}>
                 {channelDetail &&
                     <div className="channel__inner">

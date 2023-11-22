@@ -1,6 +1,5 @@
 import React, { Suspense, lazy } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-
 import Main from './components/section/Main'
 
 const Home = lazy(() => import('./pages/Home'));
@@ -11,8 +10,6 @@ const Search = lazy(() => import('./pages/Search'));
 const Video = lazy(() => import('./pages/Video'));
 
 
-// import Header from './components/section/Header'
-// import Footer from './components/section/Footer'
 // import Today from './pages/Today'
 // import Musician from './pages/Musician'
 // import Channel from './pages/Channel'
@@ -20,9 +17,11 @@ const Video = lazy(() => import('./pages/Video'));
 // import Video from './pages/Video'
 
 const App = () => {
+
+
+
   return (
     <BrowserRouter>
-      {/* <Header /> */}
       <Suspense fallback={<Main />}>
         <Routes>
           <Route path='/' element={<Home />} />
@@ -33,7 +32,6 @@ const App = () => {
           <Route path='/video/:videoId' element={<Video />} />
         </Routes>
       </Suspense>
-      {/* <Footer /> */}
     </BrowserRouter>
   )
 }

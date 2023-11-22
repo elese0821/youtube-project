@@ -40,12 +40,14 @@
 
     #header {
         left: -260px;
-        transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in-out;
+
 
         &.show {
             left: 0;
         }
     }
+
 
     #main {
         padding-left: 0;

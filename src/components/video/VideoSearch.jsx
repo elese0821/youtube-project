@@ -18,8 +18,8 @@ const VideoSearch = ({ videos, layout = '' }) => {
         <>
             <div className="video__inner">
                 {
-                    videos.map((video) => (
-                        <div className={`video ${layout}`} key={video.id.videoId}>
+                    videos.map((video, key) => (
+                        <div className={`video ${layout}`} key={key}>
                             <div className="video__thumb">
                                 <Link
                                     to={`/video/${video.id.videoId}`}

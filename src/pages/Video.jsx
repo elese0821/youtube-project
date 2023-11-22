@@ -24,7 +24,6 @@ const Video = () => {
             title="영상 페이지"
             description="영상 페이지입니다."
         >
-
             <section id='videoViewPage'>
                 <h2>비디오</h2>
                 {videoDetail && (
@@ -53,10 +52,8 @@ const Video = () => {
                         </div>
                     </div>
                 )}
-
             </section>
         </Main>
-
     )
 }
 

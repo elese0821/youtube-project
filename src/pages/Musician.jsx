@@ -5,16 +5,17 @@ import Main from '../components/section/Main'
 
 const Musician = () => {
     return (
-        <section id='musicianPage'>
-            <h2>🐱‍🐉 인기 음악가</h2>
-            <div className='Musician__inner'>
+        <Main
+            title="가수"
+            description="음악 채널 페이지입니다"
+        >
+            <section id='musicianPage'>
+                <h2>🐱‍🐉 인기 음악가</h2>
+                <div className='Musician__inner'>
 
-                {MusicianText.map((musi, key) => {
-                    return (
-                        <Main
-                            title="가수"
-                            description="음악 채널 페이지입니다"
-                        >
+                    {MusicianText.map((musi, key) => {
+                        return (
+
                             <div className="Musician" key={key}>
                                 <div className='Musician__img'>
                                     <Link to={`./channel/${musi.channelId}`}>
@@ -23,12 +24,13 @@ const Musician = () => {
                                 </div>
                                 <div className='Musician__info'>{musi.author}</div>
                             </div>
-                        </Main>
-                    )
-                })}
-            </div>
+                        )
+                    })}
+                </div>
 
-        </section>
+            </section>
+        </Main >
+
     )
 }
 

@@ -4,14 +4,15 @@ import Main from '../components/section/Main'
 
 const Today = () => {
     return (
-        <section id='todayPage'>
-            <h2>오늘의 추천 LIST</h2>
-            {todayText.map((today, key) => {
-                return (
-                    <Main
-                        title="오늘의 추천 음악"
-                        description="추천음악 페이지입니다"
-                    >
+        <Main
+            title="오늘의 추천 음악"
+            description="추천음악 페이지입니다"
+        >
+            <section id='todayPage'>
+                <h2>오늘의 추천 LIST</h2>
+                {todayText.map((today, key) => {
+                    return (
+
                         <div className="today__inner" key={key}>
                             <div className="today__thumb"></div>
                             <div className="today__text">
@@ -26,10 +27,10 @@ const Today = () => {
                                 </div>
                             </div>
                         </div>
-                    </Main>
-                )
-            })}
-        </section>
+                    )
+                })}
+            </section >
+        </Main >
     )
 }
 

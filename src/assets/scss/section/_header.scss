@@ -139,8 +139,6 @@
     li {
         display: inline-block;
 
-
-
         a {
             display: inline-block;
             padding: 5px 7px;
@@ -150,17 +148,5 @@
                 height: 20px;
             }
         }
-    }
-}
-
-@media (max-width:800px) {
-    .header__logo a {
-        position: fixed;
-        left: 0;
-        top: 0;
-    }
-
-    .header__menu {
-        background-color: rgba(0, 0, 0, 0.5);
     }
 }
