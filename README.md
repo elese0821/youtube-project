@@ -2,7 +2,7 @@
 평소에 음악을 좋아하여서 유튜브 API를 이용하여 유튜브 음악 사이트를 만들어보았습니다.
 
 ## 사이트 미리보기
-[미리보기] 
+[미리보기](https://youtube-project-cv6663h03-elese0s-projects.vercel.app/)
 
 ## 설치
 npx creact-react-app .
