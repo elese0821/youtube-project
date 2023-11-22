@@ -9,7 +9,6 @@ const Channel = lazy(() => import('./pages/Channel'));
 const Search = lazy(() => import('./pages/Search'));
 const Video = lazy(() => import('./pages/Video'));
 
-
 // import Today from './pages/Today'
 // import Musician from './pages/Musician'
 // import Channel from './pages/Channel'

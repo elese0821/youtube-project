@@ -24,59 +24,59 @@
         display: grid;
         grid-template-columns: repeat(4, 24%);
         justify-content: space-between;
+    }
 
-        .video {
-            margin-bottom: 50px;
-            padding: 10px;
-            background-color: rgba(0, 0, 0, .5);
-            backdrop-filter: blur(5px);
+    .video {
+        margin-bottom: 50px;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, .5);
+        backdrop-filter: blur(5px);
 
-            .video__thumb {
+        .video__thumb {
 
-                a {
-                    display: block;
-                    cursor: pointer;
-                    width: 100%;
-                    padding-bottom: 56.25%;
-                    background-size: cover;
-                    background-position: center;
-                }
+            a {
+                display: block;
+                cursor: pointer;
+                width: 100%;
+                padding-bottom: 56.25%;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        .video__info {
+
+            .title {
+                margin-top: 10px;
+                margin-bottom: 5px;
+                @include line-one;
             }
 
-            .video__info {
+            .desc {
+                width: 100%;
+                @include line(3);
+                color: var(--black300);
+                margin-bottom: 10px;
+            }
 
-                .title {
-                    margin-top: 10px;
-                    margin-bottom: 5px;
+            .info {
+                display: flex;
+                justify-content: space-between;
+                color: var(--black300);
+
+                .author {
                     @include line-one;
+                    font-size: 14px;
+                    text-decoration: underline;
+                    text-underline-position: under;
+
+                    &:hover {
+                        color: var(--black200);
+                    }
                 }
 
-                .desc {
-                    width: 100%;
-                    @include line(3);
-                    color: var(--black300);
-                    margin-bottom: 10px;
-                }
-
-                .info {
-                    display: flex;
-                    justify-content: space-between;
-                    color: var(--black300);
-
-                    .author {
-                        @include line-one;
-                        font-size: 14px;
-                        text-decoration: underline;
-                        text-underline-position: under;
-
-                        &:hover {
-                            color: var(--black200);
-                        }
-                    }
-
-                    .date {
-                        white-space: nowrap;
-                    }
+                .date {
+                    white-space: nowrap;
                 }
             }
         }
@@ -246,6 +246,7 @@
     }
 
     @media (max-width:1200px) {
+
         .video__inner {
             grid-template-columns: repeat(3, 32%);
         }
@@ -254,13 +255,22 @@
     }
 
     @media (max-width:1000px) {
+
         .video__inner {
             grid-template-columns: repeat(2, 48%);
         }
     }
 
     @media (max-width:500px) {
+
         .video__inner {
             grid-template-columns: repeat(1, 98%);
         }
+    }
+
+    .ellipsis {
+        width: 100px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }

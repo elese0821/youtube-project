@@ -26,11 +26,14 @@ const Home = () => {
             }
         }
 
+        let delay = 0;
         for (let name in channelIds) {
-            fetchResults(name);
+            setTimeout(() => {
+                fetchResults(name);
+            }, delay);
+            delay += 3000; // 3초 간격으로 API 요청
         }
     }, []);
-
     return (
         <Main
             title="음악 유튜버"

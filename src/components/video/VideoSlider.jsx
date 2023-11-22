@@ -40,19 +40,21 @@ const VideoSlider = ({ name, videos, title }) => {
                 >
                     {videos.slice(0, 5).map((video, key) => (
                         <SwiperSlide key={key}>
-                            <div className="video">
-                                <div className="video__thumb play__icon">
-                                    <Link
-                                        to={`/video/${video.id.videoId}`}
-                                        style={{ backgroundImage: `url(${video.snippet.thumbnails.high.url})` }}>
-                                    </Link>
-                                </div>
-                                <div className="video__info">
-                                    <h3 className='title'>
-                                        <Link to={`/video/${video.id.videoId}`}>{video.snippet.title}</Link>
-                                    </h3>
-                                    <div className='info'>
-                                        <Link to={`/channel/${video.snippet.channelId}`} className='author'>{video.snippet.channelTitle}</Link>
+                            <div className='video__inner2'>
+                                <div className="video">
+                                    <div className="video__thumb play__icon">
+                                        <Link
+                                            to={`/video/${video.id.videoId}`}
+                                            style={{ backgroundImage: `url(${video.snippet.thumbnails.high.url})` }}>
+                                        </Link>
+                                    </div>
+                                    <div className="video__info">
+                                        <h3 className='title'>
+                                            <Link to={`/video/${video.id.videoId}`}>{video.snippet.title}</Link>
+                                        </h3>
+                                        <div className='info'>
+                                            <Link to={`/channel/${video.snippet.channelId}`} className='author'>{video.snippet.channelTitle}</Link>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
