@@ -65,14 +65,13 @@
                 line-height: 1;
                 color: var(--white);
                 padding: 1rem 2rem 1rem 2.8rem;
-                border-radius: 40px;
                 position: relative;
                 transition: background-color 0.2s;
                 border: 1px solid transparent;
 
                 &:hover {
-                    background-color: rgba(255, 222, 222, 0.376);
-                    border: 1px solid rgba(255, 237, 237, 0.694);
+                    background-color: #454454;
+                    border: 1px solid var(--white);
                 }
 
                 svg {
@@ -86,8 +85,8 @@
 
             &.active {
                 a {
-                    background-color: rgba(255, 222, 222, 0.376);
-                    border: 1px solid rgba(255, 222, 222, 0.694);
+                    background-color: #454454;
+                    border: 1px solid var(--white);
                 }
             }
         }
@@ -101,8 +100,8 @@
 
             &.active {
                 a {
-                    background-color: var(--white);
-                    color: var(--mainColor);
+                    background-color: #454454;
+                    border: 1px solid #454545;
                 }
             }
 
@@ -114,13 +113,12 @@
                 padding: 0.5rem 0.9rem 0.5rem 0.9rem;
                 position: relative;
                 transition: background-color 0.2s;
-                border: 1px solid var(--white);
-                font-weight: 700;
+                border: 1px solid #454545;
+                font-weight: 400;
 
                 &:hover {
-                    background-color: var(--white);
-                    color: var(--mainColor);
-                    border-color: var(--mainColor);
+                    background-color: #454454;
+                    border: 1px solid #454545;
                 }
             }
         }

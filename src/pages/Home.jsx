@@ -35,14 +35,11 @@ const Home = () => {
         }
     }, []);
     return (
-        <Main
-            title="음악 유튜버"
-            description="음악유튜브 모음 사이트에 오신것을 환영합니다."
-        >
+        <Main title="음악 유튜버" description="음악유튜브 모음 사이트에 오신것을 환영합니다.">
             <Today />
             <Musician />
             {Object.keys(channelIds).map(name => (
-                <VideoSlider videos={channelVideo[name] || []} title='new' name={name} key={name} />
+                <VideoSlider videos={channelVideo[name] || []} title='😊최신 영상입니다.' name={name} key={name} />
             ))}
         </Main>
     )
