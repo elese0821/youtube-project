@@ -30,7 +30,7 @@ const Search = () => {
                     className='search__input'
                     onChange={e => setSearchKeyword(e.target.value)}
                     onKeyDown={e => {
-                        if (e.key == "Enter") {
+                        if (e.key === "Enter") {
                             handleSearch();
                         }
                     }}

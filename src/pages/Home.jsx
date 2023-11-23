@@ -9,23 +9,22 @@ const Home = () => {
     const [channelVideo, setChannelVideo] = useState({});
 
     const channelIds = {
-        v1: "UCCJPp5fgXqQPcJxF9Fzed0A",
-        v2: "UCBXNRYFBNNMHwArbYK3N4eg",
-        v3: "UCoV8L_tyJqZoRh51f-2ylhQ",
-        v4: "UCMRvw9TUJB5m32YPrxLu7ag",
-        v5: "UCgpBsaDW2n_6ruzht3wvP0A"
+        v1: { id: "UCCJPp5fgXqQPcJxF9Fzed0A", name: "양다일" },
+        v2: { id: "UCoV8L_tyJqZoRh51f-2ylhQ", name: "LEELLAMARZ" },
+        v3: { id: "UCMRvw9TUJB5m32YPrxLu7ag", name: "GIRIBOY" },
+        v4: { id: "UCBXNRYFBNNMHwArbYK3N4eg", name: "김나영" },
+        v5: { id: "UCGvj8kfUV5Q6lzECIrGY19g", name: "LOCO" }
     };
 
     useEffect(() => {
         const fetchResults = async (channelName) => {
             try {
-                const videoData = await fetchFromAPI(`search?channelId=${channelIds[channelName]}&part=snippet&order=date`);
+                const videoData = await fetchFromAPI(`search?channelId=${channelIds[channelName].id}&part=snippet&order=date`); // ".id" 추가
                 setChannelVideo(prevVideos => ({ ...prevVideos, [channelName]: videoData.items }));
             } catch (error) {
                 console.error(error);
             }
         }
-
         let delay = 0;
         for (let name in channelIds) {
             setTimeout(() => {
@@ -39,7 +38,7 @@ const Home = () => {
             <Today />
             <Musician />
             {Object.keys(channelIds).map(name => (
-                <VideoSlider videos={channelVideo[name] || []} title='😊최신 영상입니다.' name={name} key={name} />
+                <VideoSlider videos={channelVideo[name] || []} title={`${channelIds[name].name} 😊최신 영상입니다.`} name={name} key={name} />
             ))}
         </Main>
     )
