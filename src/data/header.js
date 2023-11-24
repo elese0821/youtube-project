@@ -71,19 +71,19 @@ export const keywordText = [
 export const snsText = [
     {
         title: "github",
-        src: "https://github.com/webstoryboy",
+        src: "https://github.com/elese0821",
         icon: <AiFillGithub />
     }, {
         title: "Codepen",
-        src: "https://codepen.io/webstoryboy",
+        src: "https://codepen.io/elese0932",
         icon: <AiOutlineCodepen />
     }, {
         title: "Youtube",
-        src: "https://www.youtube.com/webstoryboy",
+        src: "https://www.youtube.com/elese0821",
         icon: <AiFillYoutube />
     }, {
         title: "Instagram",
-        src: "https://www.instagram.com/webstoryboy",
+        src: "https://www.instagram.com/elese0821",
         icon: <AiOutlineInstagram />
     }
 ]

@@ -39,6 +39,31 @@ const Channel = () => {
 
     const channelPageClass = loading ? 'isloading' : 'isLoaded';
 
+
+    function formatNumber(num) {
+        if (num >= 10000) {
+            return Math.floor(num / 10000) + '만';
+        }
+        return num;
+    }
+
+
+    function formatNumber2(num) {
+        if (num >= 100000000) {
+            return Math.floor(num / 10000000) + '천만';
+        }
+        if (num >= 1000000) {
+            return Math.floor(num / 1000000) + '백만';
+        }
+        if (num >= 100000) {
+            return Math.floor(num / 100000) + '십만';
+        }
+        if (num >= 10000) {
+            return Math.floor(num / 10000) + '만';
+        }
+        return num;
+    }
+
     return (
         <Main
             title="음악 유튜버 채널"
@@ -60,9 +85,9 @@ const Channel = () => {
                             <div className="info__wrap">
                                 <p className='desc'>{channelDetail.snippet.description}</p>
                                 <div className='info'>
-                                    <span>{channelDetail.statistics.subscriberCount}</span>
-                                    <span>{channelDetail.statistics.videoCount}</span>
-                                    <span>{channelDetail.statistics.viewCount}</span>
+                                    <span>{formatNumber(channelDetail.statistics.subscriberCount)}</span>
+                                    <span>{channelDetail.statistics.videoCount}개의 영상</span>
+                                    <span>{formatNumber2(channelDetail.statistics.viewCount)}</span>
                                 </div>
                             </div>
                         </div>

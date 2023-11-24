@@ -67,9 +67,10 @@
 
 
             .desc {
-                @include line-one;
+                @include line(4);
                 display: block;
                 margin-bottom: 2rem;
+                word-break: keep-all;
             }
 
             .info {
@@ -81,7 +82,7 @@
                 span {
                     display: block;
                     margin: 2%;
-                    background-color: var(--mainColor);
+                    background-color: #202020c9;
                     padding: 0.2rem 0.5rem;
                     border-radius: 5px;
 

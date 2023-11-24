@@ -2,7 +2,8 @@ import Logo from '../header/Logo'
 import Menu from '../header/Menu'
 import Sns from '../header/Sns'
 
-
+import { togglemenuState } from '../../App';
+import { useRecoilValue } from 'recoil';
 // import { atom } from 'recoil';
 
 // // export const showState = atom({
@@ -12,13 +13,16 @@ import Sns from '../header/Sns'
 
 
 const Header = () => {
+    const toggleMenu = useRecoilValue(togglemenuState);
 
     return (
-        <header id='header' role='banner'>
+        <header id='header' role='banner' className={toggleMenu ? 'show' : ''}>
             <Logo />
             <Menu />
             <Sns />
         </header>
+
+
     )
 }
 

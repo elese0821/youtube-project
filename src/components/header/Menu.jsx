@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { menuText, keywordText } from '../../data/header'
 
+
 const Menu = () => {
     const location = useLocation();
     return (

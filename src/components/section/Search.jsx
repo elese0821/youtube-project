@@ -1,20 +1,27 @@
 import React, { useState } from 'react'
+import { useRecoilState } from 'recoil';
 import { useNavigate } from 'react-router-dom';
+import { togglemenuState } from '../../App';
 
 const Search = () => {
     const [searchKeyword, setSearchKeyword] = useState('');
     const navigate = useNavigate();
+    const [, setToggleMenu] = useRecoilState(togglemenuState);
 
     const handleSearch = () => {
         if (searchKeyword) {
             navigate(`/search/${searchKeyword}`);
             setSearchKeyword('');
         }
-
     }
+
+    const handleClick = () => {
+        setToggleMenu(prevState => !prevState);
+    }
+
     return (
         <div id='search'>
-            <div id="menuToggle" >
+            <div id="menuToggle" onClick={handleClick}>
                 <span></span>
                 <span></span>
                 <span></span>

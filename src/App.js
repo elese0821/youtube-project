@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Main from './components/section/Main'
+import { atom } from 'recoil';
 
 const Home = lazy(() => import('./pages/Home'));
 const Today = lazy(() => import('./pages/Today'));
@@ -9,19 +10,20 @@ const Channel = lazy(() => import('./pages/Channel'));
 const Search = lazy(() => import('./pages/Search'));
 const Video = lazy(() => import('./pages/Video'));
 
-// import Today from './pages/Today'
-// import Musician from './pages/Musician'
-// import Channel from './pages/Channel'
-// import Search from './pages/Search'
-// import Video from './pages/Video'
+export const togglemenuState = atom({
+  key: 'toggle',
+  default: false,
+});
 
 const App = () => {
-
 
 
   return (
     <BrowserRouter>
       <Suspense fallback={<Main />}>
+
+
+
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/today' element={<Today />} />
@@ -35,4 +37,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;

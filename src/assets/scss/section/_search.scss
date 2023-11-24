@@ -33,12 +33,17 @@
 @media (max-width:800px) {
     .search__inner {}
 
+    .search__input {
+        padding: 10px 20px !important;
+    }
+
     #menuToggle {
         display: flex;
         flex-direction: column;
-        width: 65px;
+        width: 60px;
         cursor: pointer;
-        justify-content: center
+        justify-content: center;
+        margin-right: 10px;
     }
 
     #menuToggle span {
@@ -46,8 +51,7 @@
         height: 4px;
         position: relative;
         margin: 3px auto;
-
-        background: #cdcdcd;
+        background: var(--white);
         border-radius: 3px;
 
         z-index: 1;
