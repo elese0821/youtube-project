@@ -85,9 +85,9 @@ const Channel = () => {
                             <div className="info__wrap">
                                 <p className='desc'>{channelDetail.snippet.description}</p>
                                 <div className='info'>
-                                    <span>{formatNumber(channelDetail.statistics.subscriberCount)}</span>
+                                    <span>구독자 수 {formatNumber(channelDetail.statistics.subscriberCount)}</span>
                                     <span>{channelDetail.statistics.videoCount}개의 영상</span>
-                                    <span>{formatNumber2(channelDetail.statistics.viewCount)}</span>
+                                    <span>조회수 {formatNumber2(channelDetail.statistics.viewCount)}</span>
                                 </div>
                             </div>
                         </div>
