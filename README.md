@@ -1,9 +1,9 @@
 # 나만의 음악 유튜브 사이트 만들기<img src="https://media.giphy.com/media/oz45ELYgMoYVsZqmor/giphy.gif?cid=82a1493b46gqhff3pfz6g198ninfz0d73ywhq9v09ljhpnix&ep=v1_stickers_trending&rid=giphy.gif&ct=s" width="80px" height="40px" title="Github_Logo" />
 평소에 음악을 좋아하여서 유튜브 API를 이용하여 유튜브 음악 사이트를 만들어보았습니다.
 
-<img src="./src/assets/img/cover.png" height="100px" width="100px">
 
 ## 사이트 미리보기
+<img src="./src/assets/img/cover.png" height="300px" width="550px">
 [미리보기](https://youtube-project-cv6663h03-elese0s-projects.vercel.app/)
 
 ## 설치
