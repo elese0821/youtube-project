@@ -4,7 +4,7 @@
 
 ## 사이트 미리보기
 <img src="./src/assets/img/cover.png" height="300px" width="550px">
-[미리보기](https://youtube-project-cv6663h03-elese0s-projects.vercel.app/)
+[미리보기](https://youtube-project-nine.vercel.app/)
 
 ## 설치
 npx creact-react-app .
