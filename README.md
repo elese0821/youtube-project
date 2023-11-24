@@ -38,9 +38,6 @@ HTTP 요청 생성: GET 메서드를 사용하여 데이터를 가져오기 위�
 REST Pull API는 다양한 웹 서비스와 통합하고 데이터를 가져오는 데 사용됩니다. 예를 들어, 외부 서비스의 데이터를 가져와서 애플리케이션에 표시하거나 분석하는 등의 작업에 활용할 수 있습니다.
 
 
-## 트러블슈팅
-git config --global core.autocrlf false
-
 ## react Suspense
 https://www.daleseo.com/react-suspense/
 React의 Suspense는 컴포넌트가 준비될 때까지 로딩 상태를 표시하는 방법을 제어하는 기능입니다.
