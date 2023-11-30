@@ -12,9 +12,8 @@ const Today = () => {
                 <h2>오늘의 추천 LIST</h2>
                 {todayText.map((today, key) => {
                     return (
-
                         <div className="today__inner" key={key}>
-                            <div className="today__thumb"></div>
+                            <div className="today__thumb" style={{ backgroundImage: `url(https://img.youtube.com/vi/${today.img}/maxresdefault.jpg)` }}></div>
                             <div className="today__text">
                                 <span className='today'>오늘의 픽!</span>
                                 <h3 className='title'>{today.title}</h3>
@@ -29,6 +28,7 @@ const Today = () => {
                         </div>
                     )
                 })}
+
             </section >
         </Main >
     )

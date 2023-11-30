@@ -84,3 +84,12 @@ input:hover {}
     opacity: 1;
     transition: opacity 1s;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: transparent !important;
+}
+
+:root {
+    --swiper-navigation-size: 30px !important;
+}

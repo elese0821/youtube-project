@@ -1,12 +1,12 @@
 export const todayText = [
     {
-        img: "https://img.youtube.com/vi/jSMu6B5BzMw/sddefault.jpg",
-        title: "I Just Wanted You",
-        desc: "Provided to YouTube by WM New Zealand I Just Wanted You · Openside I Just Wanted You ℗ 2019 Openside under exclusive ...",
-        author: "OPENSIDE",
-        date: "2023.11.04",
-        videoId: "",
-        channelId: "",
+        img: "VXEbLtAWhDM",
+        title: "[M/V] Nerd Connection(너드커넥션) - 우린 노래가 될까",
+        desc: "Nerd Connection(너드커넥션) - 우린 노래가 될까",
+        author: "Nerd Connection",
+        date: "2021.10.27",
+        videoId: "VXEbLtAWhDM",
+        channelId: "NerdConnection",
     }, {
         img: "nMaXwi2onSk",
         title: "Lost",
