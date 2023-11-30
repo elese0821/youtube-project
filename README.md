@@ -1,10 +1,10 @@
 # 나만의 음악 유튜브 사이트 만들기<img src="https://media.giphy.com/media/oz45ELYgMoYVsZqmor/giphy.gif?cid=82a1493b46gqhff3pfz6g198ninfz0d73ywhq9v09ljhpnix&ep=v1_stickers_trending&rid=giphy.gif&ct=s" width="80px" height="40px" title="Github_Logo" />
 평소에 음악을 좋아하여서 유튜브 API를 이용하여 유튜브 음악 사이트를 만들어보았습니다.
 
-<img src="./src/assets/img/cover.png" height="100px" width="100px">
 
 ## 사이트 미리보기
-[미리보기](https://youtube-project-cv6663h03-elese0s-projects.vercel.app/)
+<img src="./src/assets/img/cover.png" height="300px" width="550px">
+[미리보기](https://youtube-project-nine.vercel.app/)
 
 ## 설치
 npx creact-react-app .
@@ -37,9 +37,6 @@ HTTP 요청 생성: GET 메서드를 사용하여 데이터를 가져오기 위�
 응답 처리: 서버로부터 받은 응답을 클라이언트에서 처리합니다. 응답은 JSON, XML 등의 형식으로 전달될 수 있으며, 클라이언트는 이를 파싱하여 필요한 데이터를 추출하고 활용할 수 있습니다.
 REST Pull API는 다양한 웹 서비스와 통합하고 데이터를 가져오는 데 사용됩니다. 예를 들어, 외부 서비스의 데이터를 가져와서 애플리케이션에 표시하거나 분석하는 등의 작업에 활용할 수 있습니다.
 
-
-## 트러블슈팅
-git config --global core.autocrlf false
 
 ## react Suspense
 https://www.daleseo.com/react-suspense/
