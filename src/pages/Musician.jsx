@@ -10,7 +10,7 @@ const Musician = () => {
             description="음악 채널 페이지입니다"
         >
             <section id='musicianPage'>
-                <h2>🐱‍🐉 인기 음악가</h2>
+                <h2>🐱 인기 음악가</h2>
                 <div className='Musician__inner'>
 
                     {MusicianText.map((musi, key) => {

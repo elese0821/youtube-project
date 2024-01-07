@@ -16,7 +16,7 @@ const Logo = (props) => {
                 <em onClick={props.onClick}><SiYoutubemusic /></em>
                 <span>Music<br />youtube</span>
             </Link>
-            <div class="close close2" onClick={handleClick}></div>
+            <div className="close close2" onClick={handleClick}></div>
         </h1>
     )
 }
