@@ -1,17 +1,13 @@
 # 나만의 음악 유튜브 사이트 만들기<img src="https://media.giphy.com/media/oz45ELYgMoYVsZqmor/giphy.gif?cid=82a1493b46gqhff3pfz6g198ninfz0d73ywhq9v09ljhpnix&ep=v1_stickers_trending&rid=giphy.gif&ct=s" width="80px" height="40px" title="Github_Logo" />
 유튜브 API를 이용하여 평소에 제가 좋아하는 뮤지션들과 유튜브 구독자 수가 많은 랭킹 순으로 다양한 뮤지션들의 음악을 들어볼 수 있는 사이트를 만들었습니다.
 
-## 제작기간
-
-2023-11-13 ~ 2023-11-28
-
-## 완성작 미리보기
+## 미리보기
 
 <div align=center>
 <img width=80% src="./src/assets/img/cover.jpg">
 </div>
 
-## 프로젝트 구성
+## filetree
 
 <details>
 <summary>filetree</summary>
