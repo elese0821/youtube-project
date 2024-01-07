@@ -37,7 +37,7 @@ react-helmet-async swiper
 ### 주요 라이브러리 및 프레임워크
 
 - `React`: 사용자 인터페이스를 구축하기 위한 주요 프레임워크.
-- `React` Router: 페이지 라우팅을 관리.
+- `React Router`: 페이지 라우팅을 관리.
 - `Axios`: HTTP 요청을 보내고 응답을 처리.
 - `React` Icons: 다양한 아이콘을 사용하여 UI를 개선.
 - `React` Player: 비디오 재생 기능 구현.
