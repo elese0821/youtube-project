@@ -22,6 +22,7 @@ npm install axios react-icons
 npm install react-player
 npm install sass
 npm install swiper
+npm install recoil
 react-helmet-async swiper
 ```
 
