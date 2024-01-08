@@ -1,6 +1,6 @@
 #search {
     display: flex;
-    padding: 20px;
+    padding: 1rem;
 }
 
 .search__inner {
@@ -12,11 +12,17 @@
 
     .search__input {
         width: 100%;
-        background-color: var(--white);
-        border: 1px solid var(--black600);
-        padding: 15px 30px;
+        padding: 0.6rem 1rem;
         border-radius: 2px;
-        color: var(--black);
+        background-color: #fff;
+    }
+
+    input {
+        font-size: 0.85rem;
+
+        &::placeholder {
+            font-size: 0.8rem;
+        }
     }
 }
 

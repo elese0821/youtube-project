@@ -1,11 +1,10 @@
 body {
     background-color: var(--bgColor);
-    color: var(--white);
 }
 
 // 각 섹션 공통 요소
 section {
-    padding: 40px;
+    padding: 1rem;
 
     @media (max-width: 800px) {
         padding: 20px;
