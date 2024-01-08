@@ -1,18 +1,17 @@
 :root {
-    --mainfont-nanum: "NanumSquare";
-    --mainfont-nexon: "theJamsil";
+    --mainfont-nanum: "NanumSquareNeo-Variable";
 
     --black: #000;
     --black600: #161616;
 
-    --mainColor: #a9d1ffb9;
-    --bgColor: #ebe8e8;
+    --mainColor: #a9d1ff91;
+    --bgColor: #f0f0f0;
     --white: #000;
 
     --red: #e73a3a;
     // 폰트 셋팅
-    font-family: var(--mainfont), var(--mainfont2);
-    font-size: 16px;
+    font-family: var(--mainfont-nanum);
+    font-size: 15px;
     line-height: 1.5;
     font-weight: 300;
 

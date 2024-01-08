@@ -1,3 +1,9 @@
+#channelPage {
+    .video {
+        margin-bottom: 1rem;
+    }
+}
+
 .channel__inner {
 
     .channel__more {
@@ -41,8 +47,8 @@
         align-items: center;
         padding: 2rem 2rem;
         margin: 8rem 0 2rem 0;
-        background-color: rgba(0, 0, 0, .5);
-        backdrop-filter: blur(5px);
+        background-color: rgb(255 255 255 / 72%);
+        backdrop-filter: blur(33px);
 
         .info__wrap1 {
             .circle {
@@ -64,8 +70,6 @@
             width: calc(95% - 200px);
             margin: 0 auto;
 
-
-
             .desc {
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -78,14 +82,14 @@
                 display: flex;
                 flex-wrap: wrap;
                 width: 100%;
-
+                gap: 5px;
 
                 span {
                     display: block;
-                    margin: 2%;
-                    background-color: #202020c9;
+                    background-color: rgba(255, 255, 255, 0.685);
                     padding: 0.2rem 0.5rem;
                     border-radius: 5px;
+                    margin-top: 5px;
 
                     svg {
                         width: 20px;

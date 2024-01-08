@@ -10,10 +10,10 @@ export const MusicianText = [
         channelId: "https://www.youtube.com/channel/UCWjoDY2SXJ5dvcdunWI6mjQ",
         channelAddress: "",
     }, {
-        img: "https://yt3.googleusercontent.com/J5b9NGIkFbwC9fLUlABVz9zhBMJY6IqpVrcP7yeqiI0iHphHJkaGUaz2-KSbYv1iSR-EUZB6QN0=s176-c-k-c0x00ffffff-no-rj",
-        author: "Charlie Puth",
+        img: "https://yt3.googleusercontent.com/ytc/AIf8zZQODM02mhwHPfESJ4NnKU-AgZD8HYdlmTh6tOEa=s176-c-k-c0x00ffffff-no-rj",
+        author: "Nerd Connection",
         channelId: "UCQ-ygxSFSlq-O2zGnXxELXQ",
-        channelAddress: "https://www.youtube.com/channel/UCQ-ygxSFSlq-O2zGnXxELXQ",
+        channelAddress: "https://www.youtube.com/channel/UCgI0yyuYZGo2iqlBk-Rn8YQ",
     }, {
         img: "https://yt3.googleusercontent.com/ZlsK6BD08eKyphzMzPjGtew6GnatuG9G8hnG7cw2oDdHfM8-CBD1fbWnOqURKEOfeylF8Tcnow=s176-c-k-c0x00ffffff-no-rj",
         author: "릴러말즈(Leellamarz)",
@@ -35,14 +35,14 @@ export const MusicianText = [
         channelId: "UCPkh5Z0tfpPpNFi5qybgG_w",
         channelAddress: "https://www.youtube.com/channel/UCPkh5Z0tfpPpNFi5qybgG_w",
     }, {
-        img: "https://yt3.googleusercontent.com/DyJlQOK6ohCFDODWWfZ3wjT6dabLcNTPLI6ksUsZGjRthU1JfXgGyPDawVhN9T3sT8uQT0sTfA=s176-c-k-c0x00ffffff-no-rj",
-        author: "Ed Sheeran",
+        img: "https://yt3.googleusercontent.com/RWPyUKiE7jA8t8epqfOA_CMvEldIB-IPOgPdnFv7gnRaOKcMDBWwdmys_K5Kkhk6Db3beUsE=s176-c-k-c0x00ffffff-no-rj",
+        author: "Beenzino",
         channelId: "UClmXPfaYhXOYsNn_QUyheWQ",
-        channelAddress: "https://www.youtube.com/channel/UClmXPfaYhXOYsNn_QUyheWQ",
+        channelAddress: "https://www.youtube.com/@Beenzino_official",
     }, {
         img: "https://yt3.googleusercontent.com/lu9NYnI08TzMnwI2NehROGYH9uSo-SCT5HholxysQXTOJdNraR8sOgItAKtESKj4TtjX7NAn9ds=s176-c-k-c0x00ffffff-no-rj",
         author: "권진아 KwonJinAh",
-        channelId: "UC_3N7wOPxi2yqbLls_4bDOw",
+        channelId: "UCl-tyxErWS-1ElS8UM8jryQ",
         channelAddress: "https://www.youtube.com/channel/UC_3N7wOPxi2yqbLls_4bDOw",
     }, {
         img: "https://yt3.googleusercontent.com/5cEc2-d20Iy2WB8iu87gabc8VkN84TV7TNIg7lpZfWXpJWjzZFlfLPCiAwB8VhGtG1v84l-W=s176-c-k-c0x00ffffff-no-rj",
@@ -65,10 +65,10 @@ export const MusicianText = [
         channelId: "UCGvj8kfUV5Q6lzECIrGY19g",
         channelAddress: "https://www.youtube.com/channel/UCGvj8kfUV5Q6lzECIrGY19g",
     }, {
-        img: "https://yt3.googleusercontent.com/ALgkmMUP4HknpCOUAt2MEN4Wm7OHj_8s8LDn66BCzCX_5hA33qZW3iyI-ugF05lCEuvewNQd=s176-c-k-c0x00ffffff-no-rj",
-        author: "Dua Lipa",
+        img: "https://yt3.googleusercontent.com/4lFC2GDOFcboyUzElkMFBXgHCZaIMrS6SXZaPDVcCCW-fJ2q9668ZK9x2_Tf4M5YFn0Gz57oN5Q=s176-c-k-c0x00ffffff-no-rj",
+        author: "최유리",
         channelId: "UCzVb0SIXp9q9PeKCcFjsBtA",
-        channelAddress: "https://www.youtube.com/channel/UCzVb0SIXp9q9PeKCcFjsBtA",
+        channelAddress: "https://www.youtube.com/channel/UCjglaxl4u4x1hG9vA0OZL2Q",
     }, {
         img: "https://yt3.googleusercontent.com/OdZssm3Ca0wIfPk9ZV-RU_Ekvd-k8zJSoRaDvfT1Bio8O_T-T8AmvFD17UTGMPA2nvZ_K8GJQw=s176-c-k-c0x00ffffff-no-rj",
         author: "Khalid",
@@ -95,10 +95,10 @@ export const MusicianText = [
         channelId: "UCERrDZ8oN0U_n9MphMKERcg",
         channelAddress: "https://www.youtube.com/channel/UCERrDZ8oN0U_n9MphMKERcg",
     }, {
-        img: "https://yt3.googleusercontent.com/Udfgx_So2Z5UBHtnX7ZWtGt62Znvjr7BSBuboSz89A3-o6POuHot6QvldEp1siGncPDEwr7-Ag=s176-c-k-c0x00ffffff-no-rj",
-        author: "Taylor Swift",
+        img: "https://yt3.googleusercontent.com/SRpVM-37M6lqLEQyDFaSA5IrgEyr9eONMrkKkAx3g5z4uTNPN78rAWTLC6W2b5uKb2KptX03pQ=s176-c-k-c0x00ffffff-no-rj",
+        author: "NewJeans ",
         channelId: "UCqECaJ8Gagnn7YCbPEzWH6g",
-        channelAddress: "https://www.youtube.com/@TaylorSwift",
+        channelAddress: "https://www.youtube.com/@NewJeans_official",
     }, {
         img: "https://yt3.googleusercontent.com/nCMHKdzJCDlE5uX_9HplknQdYgrKEs3yZMSQNx2yYs8gRA05NJAZQAe8TMNpna_EEIaKx6FR=s176-c-k-c0x00ffffff-no-rj",
         author: "Coldplay",

@@ -1,276 +1,290 @@
-    .video__more {
-        width: 100%;
+.video__more {
+    width: 100%;
 
-        button {
-            padding: 1rem 2rem;
-            background-color: var(--black100);
-            display: inline-block;
-            font-size: 0.9rem;
+    button {
+        padding: 1rem 2rem;
+        background-color: var(--black100);
+        display: inline-block;
+        font-size: 0.9rem;
+        cursor: pointer;
+        color: var(--white);
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: 300;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: var(--black300);
+        }
+    }
+}
+
+.video__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    justify-content: space-between;
+}
+
+.video {
+    padding: 10px;
+    background-color: rgb(250 250 250);
+    backdrop-filter: blur(5px);
+
+    .video__thumb {
+
+        a {
+            display: block;
             cursor: pointer;
-            color: var(--white);
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-            font-weight: 300;
-            transition: background-color 0.3s;
+            width: 100%;
+            padding-bottom: 56.25%;
+            background-size: cover;
+            background-position: center;
 
             &:hover {
-                background-color: var(--black300);
+                color: #3333338f;
             }
         }
     }
 
-    .video__inner {
-        display: grid;
-        grid-template-columns: repeat(4, 24%);
-        justify-content: space-between;
-    }
+    .video__info {
 
-    .video {
-        margin-bottom: 50px;
-        padding: 10px;
-        background-color: rgba(207, 207, 207, 0.603);
-        backdrop-filter: blur(5px);
-
-        .video__thumb {
-
-            a {
-                display: block;
-                cursor: pointer;
-                width: 100%;
-                padding-bottom: 56.25%;
-                background-size: cover;
-                background-position: center;
-            }
+        .title {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            @include line-one;
+            font-size: 0.95rem;
         }
 
-        .video__info {
+        .desc {
+            width: 100%;
+            @include line(3);
+            margin-bottom: 10px;
+            font-size: 0.8rem;
+            color: #333333af;
+        }
 
-            .title {
-                margin-top: 10px;
-                margin-bottom: 5px;
+        .info {
+            display: flex;
+            justify-content: space-between;
+            color: var(--black300);
+            font-size: 0.8rem;
+
+            .author {
                 @include line-one;
+                font-size: 14px;
+                text-decoration: underline;
+                text-underline-position: under;
+
+                &:hover {
+                    color: var(--black200);
+                }
             }
 
-            .desc {
-                width: 100%;
-                @include line(3);
-                color: var(--black300);
-                margin-bottom: 10px;
+            .date {
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+#videoViewPage {
+
+    .comment-container {
+        width: 100%;
+        margin: 0 auto;
+
+        .comment {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9b7;
+
+            .comment-author {
+                font-weight: bold;
+                color: #333;
+                margin-bottom: 5px;
             }
 
-            .info {
-                display: flex;
-                justify-content: space-between;
-                color: var(--black300);
+            .comment-text {
+                color: #666;
+            }
+        }
+    }
+}
 
-                .author {
-                    @include line-one;
-                    font-size: 14px;
-                    text-decoration: underline;
-                    text-underline-position: under;
+.video__view {
+    .video__play {
+        width: 100%;
+        padding-bottom: 56.25%;
+        position: relative;
+    }
+
+    .video__info {
+
+        .video__title {
+            padding-top: 10px;
+            margin-bottom: 20px;
+            font-size: 30px;
+            border-bottom: 1px solid var(--black300);
+            padding-bottom: 15px;
+        }
+
+        .video__channel {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+
+            .id {
+                font-weight: 800;
+
+                a {
+                    background-color: rgb(255 255 255 / 52%);
+                    padding: 10px 20px;
+                    transition: all 0.3s;
+                    border: 1px solid #ccc;
 
                     &:hover {
-                        color: var(--black200);
+                        background-color: rgba(255, 255, 255, 0.712);
                     }
                 }
+            }
 
-                .date {
-                    white-space: nowrap;
+            .count {
+                span {
+                    border: 1px solid var(--black300);
+                    padding: 10px 20px;
+                    border-radius: 30px;
+                    margin-left: 5px;
+                    background-color: var(--black100);
+                    color: var(--white);
+
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        vertical-align: -5px;
+                        margin-right: 5px;
+                    }
                 }
             }
+
+            .video__desc {
+                white-space: pre-line;
+                padding: 40px 0;
+                border-bottom: 1px solid var(--black100);
+                width: 100%;
+
+            }
+
         }
     }
+}
 
-    #videoViewPage {
-        // padding: 0;
+// 비디오 상세 페이지
+.video__view {
+
+    .video__play {
+        width: 100%;
+        padding-bottom: 56.25%;
+        position: relative;
     }
 
-    .video__view {
-        .video__play {
-            width: 100%;
-            padding-bottom: 56.25%;
-            position: relative;
+    .video__info {
+
+        .video__title {
+            padding-top: 20px;
+            margin-bottom: 20px;
+            font-size: 30px;
+            border-bottom: 1px solid var(--black600);
+            padding-bottom: 15px;
+
+            @media (max-width: 800px) {
+                font-size: 24px;
+            }
+
         }
 
-        .video__info {
+        .video__channel {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            margin-top: 40px;
 
-            .video__title {
-                padding-top: 10px;
+            @media (max-width: 800px) {
+                margin-top: 20px;
                 margin-bottom: 20px;
-                font-size: 30px;
-                border-bottom: 1px solid var(--black300);
-                padding-bottom: 15px;
+                flex-direction: column;
             }
 
-            .video__channel {
-                display: flex;
-                justify-content: space-between;
-                margin-bottom: 40px;
-                flex-wrap: wrap;
+            .count {
+                span {
+                    padding: 7px 20px;
+                    margin-left: 5px;
+                    background-color: var(--black100);
+                    color: var(--white);
+                    display: inline-block;
 
-                .id {
-                    font-weight: 800;
 
-                    a {
-                        background-color: rgba(0, 0, 0, .3);
-                        border: 1px solid var(--white);
-                        padding: 10px 20px;
-                        transition: all 0.3s;
-
-                        &:hover {
-                            background-color: rgba(0, 0, 0, .1);
-                        }
-                    }
-                }
-
-                .count {
-                    span {
-                        border: 1px solid var(--black300);
-                        padding: 10px 20px;
-                        border-radius: 30px;
-                        margin-left: 5px;
-                        background-color: var(--black100);
+                    svg {
                         color: var(--white);
-
-                        svg {
-                            width: 20px;
-                            height: 20px;
-                            vertical-align: -5px;
-                            margin-right: 5px;
-                        }
-                    }
-                }
-
-                .video__desc {
-                    white-space: pre-line;
-                    padding: 40px 0;
-                    border-bottom: 1px solid var(--black100);
-                    width: 100%;
-
-                }
-
-            }
-        }
-    }
-
-    // 비디오 상세 페이지
-    .video__view {
-
-        .video__play {
-            width: 100%;
-            padding-bottom: 56.25%;
-            position: relative;
-        }
-
-        .video__info {
-
-            .video__title {
-                padding-top: 20px;
-                margin-bottom: 20px;
-                font-size: 30px;
-                border-bottom: 1px solid var(--black600);
-                padding-bottom: 15px;
-
-                @media (max-width: 800px) {
-                    font-size: 24px;
-                }
-
-            }
-
-            .video__channel {
-                display: flex;
-                justify-content: space-between;
-                margin-bottom: 40px;
-                margin-top: 40px;
-
-                @media (max-width: 800px) {
-                    margin-top: 20px;
-                    margin-bottom: 20px;
-                    flex-direction: column;
-                }
-
-                .id {
-
-                    a {
-                        border: 1px solid var(--black300);
-                        padding: 7px 20px;
-                        display: inline-block;
-
-                        @media (max-width: 800px) {
-                            margin-bottom: 10px;
-                        }
-                    }
-                }
-
-                .count {
-                    span {
-                        padding: 7px 20px;
-                        margin-left: 5px;
-                        background-color: var(--black100);
-                        color: var(--white);
-                        display: inline-block;
-
-
-                        svg {
-                            color: var(--white);
-                            width: 20px;
-                            height: 20px;
-                            vertical-align: -5px;
-                            margin-right: 5px;
-                        }
+                        width: 20px;
+                        height: 20px;
+                        vertical-align: -5px;
+                        margin-right: 5px;
                     }
                 }
             }
         }
+    }
 
-        .video__desc {
-            border-top: 1px solid var(--black600);
-            white-space: pre-line;
-            padding-top: 40px;
+    .video__desc {
+        border-top: 1px solid var(--black600);
+        white-space: pre-line;
+        padding-top: 40px;
+    }
+}
+
+.video__comments {
+
+    h3 {}
+
+    ul {
+
+        li {
+            border: 1px solid #333;
+            margin: 10px 0;
+            padding: 3px 8px;
         }
     }
+}
 
-    .video__comments {
+@media (max-width:1200px) {
 
-        h3 {}
-
-        ul {
-
-            li {
-                border: 1px solid #333;
-                margin: 10px 0;
-                padding: 3px 8px;
-            }
-        }
+    .video__inner {
+        grid-template-columns: repeat(3, 32%);
     }
 
-    @media (max-width:1200px) {
 
-        .video__inner {
-            grid-template-columns: repeat(3, 32%);
-        }
+}
 
+@media (max-width:1000px) {
 
+    .video__inner {
+        grid-template-columns: repeat(2, 48%);
     }
+}
 
-    @media (max-width:1000px) {
+@media (max-width:500px) {
 
-        .video__inner {
-            grid-template-columns: repeat(2, 48%);
-        }
+    .video__inner {
+        grid-template-columns: repeat(1, 98%);
     }
+}
 
-    @media (max-width:500px) {
-
-        .video__inner {
-            grid-template-columns: repeat(1, 98%);
-        }
-    }
-
-    .ellipsis {
-        width: 100px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+.ellipsis {
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -23,7 +23,6 @@ const Search = () => {
             .then((data) => {
                 setNextPageToken(data.nextPageToken);
                 setVideos((prevVideos) => [...prevVideos, ...data.items])
-                console.log(data)
                 setLoading(false);
             })
             .catch((error) => {
