@@ -45,7 +45,7 @@ react-helmet-async swiper
 - `React` Player: 비디오 재생 기능 구현.
 - `SASS`: 스타일링을 위한 CSS 전처리기.
 - `Swiper`: 감각적인 슬라이더 기능 구현.
-- `React` Helmet Async: SEO 최적화 및 동적인 head 태그 관리.
+- `React Helmet Async`: SEO 최적화 및 동적인 head 태그 관리.
 
 ### 상태 관리
 
