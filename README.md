@@ -108,27 +108,36 @@ react-helmet-async swiper
 ## dev notes
 
 <details>
-- Postman
-  Postman은 API 개발 및 테스트를 위한 프로그램입니다. Postman을 사용하면 웹 서비스를 호출하고 응답을 확인할 수 있으며, API 요청을 생성하고 관리할 수 있습니다. Postman은 사용자가 웹 API를 테스트하고 디버깅하는 데 도움이 되는 다양한 기능을 제공합니다. 예를 들어, 다양한 HTTP 메서드(GET, POST, PUT, DELETE 등)를 사용하여 API를 호출하고, 요청에 필요한 헤더와 매개변수를 설정할 수 있습니다. 또한, API 응답을 검사하고 검증할 수 있는 기능도 제공합니다. Postman은 개발자들 사이에서 널리 사용되며, API 개발 및 테스트 작업을 효율적으로 수행할 수 있도록 도와줍니다.
-- REST Pull API
-  REST Pull API는 REST 아키텍처를 기반으로 데이터를 가져오는 API입니다. REST는 Representational State Transfer의 약자로, 웹 서비스 간의 통신을 위한 아키텍처 스타일입니다. REST Pull API는 클라이언트가 서버로부터 데이터를 요청하고 가져오는 방식으로 작동합니다.
+    <dl>
+        <dt>REST Pull API</dt>
+        <dd>
+             REST Pull API는 REST 아키텍처를 기반으로 데이터를 가져오는 API입니다. REST는 Representational State Transfer의 약자로, 웹 서비스 간의 통신을 위한 아키텍처 스타일입니다. REST Pull API는 클라이언트가 서버로부터 데이터를 요청하고 가져오는 방식으로 작동합니다.
   REST Pull API를 사용하여 데이터를 가져오기 위해서는 다음과 같은 단계를 따를 수 있습니다:
   API 엔드포인트 식별: 데이터를 가져올 대상 서버의 API 엔드포인트를 식별합니다. 엔드포인트는 서버에서 제공하는 특정 리소스에 대한 URL입니다.
   HTTP 요청 생성: GET 메서드를 사용하여 데이터를 가져오기 위한 HTTP 요청을 생성합니다. 이 요청은 엔드포인트 URL과 필요한 매개변수, 헤더 등을 포함할 수 있습니다.
   요청 전송: 생성한 HTTP 요청을 서버로 전송합니다. 이를 통해 서버는 요청을 처리하고 관련 데이터를 응답으로 반환합니다.
   응답 처리: 서버로부터 받은 응답을 클라이언트에서 처리합니다. 응답은 JSON, XML 등의 형식으로 전달될 수 있으며, 클라이언트는 이를 파싱하여 필요한 데이터를 추출하고 활용할 수 있습니다.
   REST Pull API는 다양한 웹 서비스와 통합하고 데이터를 가져오는 데 사용됩니다. 예를 들어, 외부 서비스의 데이터를 가져와서 애플리케이션에 표시하거나 분석하는 등의 작업에 활용할 수 있습니다.
-- react Suspense
-  https://www.daleseo.com/react-suspense/
+        </dd>
+    </dl>
+    <dl>
+        <dt>react Suspense</dt>
+        <dd>
+            https://www.daleseo.com/react-suspense/
   React의 Suspense는 컴포넌트가 준비될 때까지 로딩 상태를 표시하는 방법을 제어하는 기능입니다.
   Suspense는 우리가 데이터를 불러오는 동안 일시적으로 "대기" 상태를 표현할 수 있게 해줍니다. 예를 들어, API 호출 결과를 기다리는 동안 로딩 스피너를 보여주는 것과 같은 작업을 수행할 수 있습니다.
   Suspense를 사용하면, 우리는 이러한 비동기 로직을 컴포넌트의 바깥으로 빼내고, 대신 컴포넌트 내부에서 필요한 데이터가 준비되었는지 여부만을 신경쓰면 됩니다. 이는 코드의 가독성을 높여주며, 비동기 로직 처리를 더욱 수월하게 만들어 줍니다.
-- rel="noopener noreferrer"
-    : HTML에서 <a> 태그에 사용되는 속성 값  
+        </dd>
+    </dl>
+<dl>
+    <dt>rel="noopener noreferrer"</dt>
+    <dd>: HTML에서 <a> 태그에 사용되는 속성 값  
     1. noopener: 이 속성은 새 탭에서 열리는 링크가 원래 페이지와의 관계를 완전히 분리하도록 합니다.
     - 링크된 새 페이지가 window.opener 속성을 통해 원본 페이지를 참조하거나 조작하는 것을 방지합니다. 이것은 보안상의 이유로 중요합니다.  
         예를 들어, 맬웨어가 포함된 페이지로의 링크가 있다면, noopener 속성이 없으면 해당 페이지가 원본 페이지에 악영향을 끼칠 수 있습니다.   
     2. noreferrer: 이 속성은 링크를 클릭했을 때, 브라우저가 HTTP Referrer 헤더를 전송하지 않도록 합니다.  이는 사용자의 프라이버시를 보호하는 데 도움이 됩니다. Referrer 헤더는 사용자가 이전에 방문한 페이지의 URL을 포함할 수 있기 때문입니다.
-    또한, noreferrer는 noopener의 기능도 포함하므로, 보안상의 이점도 제공합니다.
+    또한, noreferrer는 noopener의 기능도 포함하므로, 보안상의 이점도 제공합니다.</dd>
+</dl>
+
 </details>
 
