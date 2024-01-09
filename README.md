@@ -3,7 +3,7 @@
 ## 개요
 
 - **프로젝트 목표**: 유튜브 API를 활용하여 사용자가 좋아하는 뮤지션들과 구독자 수가 많은 음악가들의 영상을 탐색할 수 있는 사이트 구축
-- **기술 스택**: `React`, `Recoil`, `axios`, `react-router-dom`, `Sass`
+- **기술 스택**: `React` `Recoil` `axios` `react-router-dom` `Sass`
 
 
 <div align=center>
