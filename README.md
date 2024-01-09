@@ -58,6 +58,11 @@ react-helmet-async swiper
 
 - `react-router-dom`을 사용하여 애플리케이션의 라우팅 구조 설계
 - 홈, 오늘의 추천 음악, 인기 뮤지션, 개별 채널 페이지 등을 포함하는 다중 페이지 구조 구현
+- 
+#### data
+- header.js 파일: header.jsx에 뿌려줄 데이터를 이들은 별도의 JSON 파일로 만들었습니다.
+- 뮤지션 정보 JSON 파일: 이 파일에는 여러 뮤지션들의 정보가 JSON 형식으로 저장되어 있습니다. 이 데이터는 Musician.jsx 파일에서 map 함수를 사용하여 화면에 표시됩니다. map 함수는 JSON 파일의 각 항목을 순회하면서 화면에 뿌려주는 역할을 합니다.
+- today.js 파일: 이 파일은 today.jsx 컴포넌트에 데이터를 제공합니다. today.js는 현재 날짜나 관련 정보와 같은 데이터를 생성하고, 이 데이터는 today.jsx에서 화면에 표시됩니다.
 
 ### 3. Recoil 상태 관리
 
@@ -137,6 +142,10 @@ react-helmet-async swiper
         예를 들어, 맬웨어가 포함된 페이지로의 링크가 있다면, noopener 속성이 없으면 해당 페이지가 원본 페이지에 악영향을 끼칠 수 있습니다.   
     2. noreferrer: 이 속성은 링크를 클릭했을 때, 브라우저가 HTTP Referrer 헤더를 전송하지 않도록 합니다.  이는 사용자의 프라이버시를 보호하는 데 도움이 됩니다. Referrer 헤더는 사용자가 이전에 방문한 페이지의 URL을 포함할 수 있기 때문입니다.
     또한, noreferrer는 noopener의 기능도 포함하므로, 보안상의 이점도 제공합니다.</dd>
+</dl>
+<dl>
+    <dt>decodeURIComponent</dt>
+    <dd>decodeURIComponent은 JavaScript에서 사용되는 내장 함수로, 이전에 encodeURIComponent 함수에 의해 인코딩된 Uniform Resource Identifier (URI) 구성 요소를 디코딩하는 데 사용됩니다. 이 함수는 URI에서 특수 문자를 인코딩한 후, 이를 다시 원래의 문자로 복원할 때 유용합니다.</dd>
 </dl>
 
 </details>
