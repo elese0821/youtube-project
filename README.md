@@ -15,8 +15,6 @@ _이미지 클릭하면 사이트로 이동합니다._
 ## 설치
 
 ```
-npx creact-react-app
-
 npm install react-router-dom
 npm install axios react-icons
 npm install react-player
@@ -32,6 +30,7 @@ react-helmet-async swiper
 4. react-player: 비디오나 오디오 재생을 위한 패키지. 미디어 파일을 재생하고 컨트롤하기 위해 사용했습니다.
 5. react-helmet-async: 동적으로 HTML <head> 요소를 수정하기 위한 패키지. 페이지의 제목, 메타 태그, 스타일 시트 등을 동적으로 변경하기 위해 사용했습니다.
 6. swiper: 모바일 터치 슬라이더나 갤러리 형식의 컴포넌트를 만들기 위한 패키지. 슬라이드효과를 구현하기 위해 사용했습니다.
+7. recoil: 반응형을 위해 헤더를 없애고 햄버거메뉴를 넣은 후 햄버거메뉴를 클릭하면 헤더가 나타나도록 toggleMenu 상태를 공유하기 위해 사용했습니다.
 
 ## 기술 스택
 
