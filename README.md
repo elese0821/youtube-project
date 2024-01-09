@@ -138,5 +138,7 @@ react-helmet-async swiper
 ## 트러블 슈팅
 
 <details>
-    <summary></summary>
+    <summary>429error</summary>
+    - rapid api 요청 수 초과 -> 24시간 후 정상 작동
+
 </details>
