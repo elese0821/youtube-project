@@ -7,7 +7,7 @@
 
 
 <div align=center>
-<a href="https://youtube-project-nine.vercel.app/"><img width=80% src="./src/assets/img/cover.png"></a>
+<a href="https://youtube-project-nine.vercel.app/"><img width=400px src="./src/assets/img/cover.png"></a>
     
 _이미지 클릭하면 사이트로 이동합니다._
     
