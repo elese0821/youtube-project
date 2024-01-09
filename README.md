@@ -58,7 +58,6 @@ react-helmet-async swiper
 
 - `react-router-dom`을 사용하여 애플리케이션의 라우팅 구조 설계
 - 홈, 오늘의 추천 음악, 인기 뮤지션, 개별 채널 페이지 등을 포함하는 다중 페이지 구조 구현
-- 
 #### data
 - header.js 파일: header.jsx에 뿌려줄 데이터를 이들은 별도의 JSON 파일로 만들었습니다.
 - 뮤지션 정보 JSON 파일: 이 파일에는 여러 뮤지션들의 정보가 JSON 형식으로 저장되어 있습니다. 이 데이터는 Musician.jsx 파일에서 map 함수를 사용하여 화면에 표시됩니다. map 함수는 JSON 파일의 각 항목을 순회하면서 화면에 뿌려주는 역할을 합니다.
